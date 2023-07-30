@@ -7,7 +7,7 @@ import ProductList from "./ProductList";
 import axios from "axios";
 async function fetchApi(setData, category) {
   if (category === "") {
-    let res = await axios("https://fakestoreapi.com/products/products");
+    let res = await axios("https://fakestoreapi.com/products");
     setData(res.data);
   } else {
     let res = await axios(
