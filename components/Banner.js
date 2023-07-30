@@ -148,7 +148,7 @@ const Banner = () => {
         </div>
       </div>
       <ProductList
-        heading={category === "" ? "Man & Woman Fashion" : category}
+        heading={category === "" ? "All Category" : category}
         products={
           (searchInput.length > 1 &&
             (data || []).filter(
